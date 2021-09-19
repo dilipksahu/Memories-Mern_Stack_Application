@@ -4,6 +4,19 @@ bin-release/
 [Oo]bj/
 [Bb]in/
 
+# node.js
+.nyc_output/
+coverage/
+node_modules/
+npm-debug.log
+package-lock.json
+test/*.log
+
+# react.js
+node_modules/
+.DS_Store
+dist/
+
 # Other files and folders
 .settings/
 
