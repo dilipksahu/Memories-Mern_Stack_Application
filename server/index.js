@@ -13,7 +13,9 @@ app.use(cors());
 
 app.use('/posts', postRoutes);
 
+//https://cloud.mongodb.com/v2/6130f63d0be94e751fa53655#security/network/accessList
 const CONNECTION_URL = 'mongodb+srv://mernstackproject:mernstackproject123@cluster0.z51bk.mongodb.net/mernstackproject?retryWrites=true&w=majority';
+// console.log("CONNECTION_URL===>", CONNECTION_URL);
 const PORT = process.env.PORT || 5000;
 
 mongoose.connect(CONNECTION_URL, { useNewUrlParser: true, useUnifiedTopology: true })
